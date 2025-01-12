@@ -1,0 +1,50 @@
+{
+  "name": "@eliyya/typed-css-modules",
+  "version": "1.0.0",
+  "description": "Creates .d.ts files from CSS Modules .css files with a nextjs pluggin",
+  "main": "./lib/lib.js",
+  "type": "module",
+  "types": "./lib/lib.d.ts",
+  "exports": "./lib/lib.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && esbuild src/lib.ts --minify --platform=node --outfile=lib/lib.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eliyya/typed-css-modules.git"
+  },
+  "keywords": [
+    "css-modules",
+    "css",
+    "typescript",
+    "ts",
+    "nextjs",
+    "next"
+  ],
+  "author": "eliyya",
+  "license": "MIT",
+  "dependencies": {
+    "typed-css-modules": "^0.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "esbuild": "^0.24.2",
+    "eslint": "^9.18.0",
+    "globals": "^15.14.0",
+    "next": "^15.1.4",
+    "typescript": "^5.7.3"
+  },
+  "peerDependencies": {
+    "next": "^15"
+  },
+  "peerDependenciesMeta": {
+    "next": {
+      "optional": true
+    }
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": ">=20.11"
+  }
+}
