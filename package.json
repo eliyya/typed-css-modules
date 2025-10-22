@@ -1,6 +1,6 @@
 {
   "name": "@eliyya/typed-css-modules",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Creates .d.ts files from CSS Modules .css files with a nextjs pluggin",
   "main": "./lib/lib.js",
   "type": "module",
@@ -8,7 +8,8 @@
   "exports": "./lib/lib.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc && esbuild src/lib.ts --minify --platform=node --outfile=lib/lib.js"
+    "build": "tsc && esbuild src/lib.ts --minify --platform=node --outfile=lib/lib.js",
+    "prepublishOnly": "pnpm build"
   },
   "repository": {
     "type": "git",
